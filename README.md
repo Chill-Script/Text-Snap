@@ -1,5 +1,5 @@
 TextSnap Python Script Overview
-This script is a comprehensive Python application named 'TextSnap,' designed for text extraction, editing, and management. Here's an overview of its key components and features:
+This script is a comprehensive Python application designed for text extraction, editing, and management. Here's an overview of its key components and features:
 
 Key Features:
 
