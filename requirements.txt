@@ -1,0 +1,11 @@
+requests
+Pillow
+pytesseract
+tkinter
+openai
+curses
+pyperclip
+cryptography
+stat
+base64
+subprocess
