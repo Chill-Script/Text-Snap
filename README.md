@@ -1,6 +1,8 @@
 TextSnap Python Script Overview
 This script is a comprehensive Python application named 'TextSnap,' designed for text extraction, editing, and management. Here's an overview of its key components and features:
+
 Key Features:
+
 1. OCR (Optical Character Recognition):
 The script utilizes the `pytesseract` library to perform OCR on images, extracting text from various image formats (PNG, JPG, JPEG, BMP, TIFF). It processes multiple images selected by the user and extracts text, which is then cleaned up for better readability.
 2. User Interface:
