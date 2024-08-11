@@ -66,10 +66,9 @@ The application utilizes Optical Character Recognition (OCR) to convert images i
    - Options include adding images for OCR, editing text, saving text, copying text to the clipboard, and interacting with ChatGPT.
 
 3. **Customize Interface:**
-   - Change the color scheme through the options menu to suit your preferences. 'this is still in work in progress'
+   - Change the color scheme through the options menu to suit your preferences. `Work in Progress`
 
-
-## Contributing
+## Contributing		
 
 If you would like to contribute to TextSnap, please follow these steps:
 
