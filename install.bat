@@ -22,7 +22,7 @@ python -m pip install --upgrade pip
 
 REM Install required packages
 echo Installing required packages...
-pip install requests Pillow pytesseract openai windows-curses pyperclip cryptography
+pip install requests Pillow pytesseract openai windows-curses pyperclip cryptography curses
 
 REM Run the Python script
 echo Running the script...
