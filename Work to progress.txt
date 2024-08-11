@@ -1,0 +1,3 @@
+Work to do:
+
+1) making it so that the color menu adresses the right text's
