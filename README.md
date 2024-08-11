@@ -1,39 +1,85 @@
-TextSnap Python Script Overview
-This script is a comprehensive Python application designed for text extraction, editing, and management. Here's an overview of its key components and features:
+# Text-Snap
+TextSnap is a comprehensive Python application designed for extracting, editing, and managing text from images.
+The application utilizes Optical Character Recognition (OCR) to convert images into text, which can then be edited, saved as txt, copied to the clipboard, or processed further through OpenAI's ChatGPT.
 
-Key Features:
+## Features
 
-1. OCR (Optical Character Recognition):
-The script utilizes the `pytesseract` library to perform OCR on images, extracting text from various image formats (PNG, JPG, JPEG, BMP, TIFF). It processes multiple images selected by the user and extracts text, which is then cleaned up for better readability.
+### 1. OCR (Optical Character Recognition)
+- Supports image formats such as PNG, JPG, JPEG, BMP, and TIFF.
+- Utilizes the `pytesseract` library to extract text from images.
+- Processes multiple images selected by the user and cleans the extracted text for readability.
 
-2. User Interface:
-The script features a command-line-based user interface built with the `curses` library. Users can navigate through various menus to perform tasks such as scanning images, editing extracted text, saving text to files, copying text to the clipboard, and interacting with OpenAI's ChatGPT.
+### 2. User Interface
+- Command-line-based interface built using the `curses` library.
+- Interactive menus for scanning images, editing text, saving text to files, copying text to the clipboard, and uploading text to ChatGPT.
+- Customizable color schemes for the interface.
 
-3. File Management and Security:
-Extracted text can be saved to new or existing text files. The script ensures the directory where files are saved (`textsnapmapa`) is hidden and protected. Encryption is implemented using the `cryptography` library (Fernet) to securely store configuration data, including the encryption key and admin password. The script also provides functionalities for hiding, unhiding, protecting, and unprotecting files.
+### 3. File Management and Security
+- Extracted text can be saved to new or existing text files.
+- The application ensures the directory where files are saved (`textsnapmapa`) is hidden and protected.
+- Configuration data, including encryption keys and admin passwords, is securely stored using the `cryptography` library.
 
-4. ChatGPT Integration:
-Users can upload the extracted text to ChatGPT via OpenAI's API and receive a response. The API key is securely managed and can be saved directly into the script for persistent use.
+### 4. ChatGPT Integration
+- Users can upload the extracted text to ChatGPT via OpenAI's API and receive responses.
+- The OpenAI API key is securely managed and can be saved directly into the script for persistent use.
 
-5. Customization:
-The script allows users to customize the color scheme of the interface to enhance the user experience. Admin features include the ability to change the admin password, remove the `textsnapmapa` directory, and view or reset scan statistics.
+### 5. Customization
+- Users can customize the interface's color scheme.
+- Admin features include changing the admin password, removing the `textsnapmapa` directory, and viewing or resetting scan statistics.
 
-6. Multi-threading and UI Feedback:
-A loading bar is displayed during initialization, implemented via multi-threading, to provide feedback to the user during potentially time-consuming operations. The script also features a system for displaying real-time feedback and results for user actions within the interface.
+### 6. Multi-threading and UI Feedback
+- A loading bar is displayed during initialization to provide feedback to the user during potentially time-consuming operations.
 
-7. Error Handling and Robustness:
-The script includes robust error handling to manage issues like failed image processing, API interactions, and file permissions.
+### 7. Error Handling and Robustness
+- Includes robust error handling to manage issues such as failed image processing, API interactions, and file permissions.
 
-Usage Flow:
+## Installation
 
-1. Initialization:
-The script initializes by loading or generating encryption keys and configuration settings. A loading bar is displayed to the user during this process.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/de3jeh/Text-Snap
+   ```
+2. **Navigate to the directory:**
+   ```bash
+   cd TextSnap
+   ```
+3. **Install the required dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Set up Tesseract OCR:**
+   - Download and install Tesseract OCR from [here](https://github.com/tesseract-ocr/tesseract).
+   - Update the `pytesseract.pytesseract.tesseract_cmd` path in the script to point to your Tesseract installation.
 
-2. Main Menu:
-The main menu presents options for scanning images, editing text, saving text, copying to the clipboard, and interacting with ChatGPT. Users can navigate through the menu using arrow keys and select options by pressing Enter.
+5. **Set up OpenAI API key:**
+   - Replace `YOUR_OPEN_API_KEY` in the script with your OpenAI API key.
+   - Or use the script UI to do this
 
-3. Text Handling:
-After scanning, the extracted text is available for editing, saving, or further processing. Users can opt to edit the text using a built-in text editor window or save it directly to a file.
+## Usage
 
-4. Options and Customization:
-In the options menu, users can set or change their OpenAI API key, modify the interface color scheme.
+1. **Run the script:**
+   ```bash
+   python TextSnap.py
+   ```
+2. **Navigate the menu:**
+   - Use arrow or number keys to navigate and press Enter to select options.
+   - Options include adding images for OCR, editing text, saving text, copying text to the clipboard, and interacting with ChatGPT.
+
+3. **Customize Interface:**
+   - Change the color scheme through the options menu to suit your preferences. (this is still in work in progress)
+
+
+## Contributing
+
+If you would like to contribute to TextSnap, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License.
