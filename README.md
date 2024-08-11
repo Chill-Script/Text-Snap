@@ -37,7 +37,7 @@ The application utilizes Optical Character Recognition (OCR) to convert images i
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/de3jeh/Text-Snap
+   git clone https://github.com/Chill-Script/Text-Snap
    ```
 2. **Navigate to the directory:**
    ```bash
