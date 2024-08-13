@@ -25,7 +25,6 @@ The application utilizes Optical Character Recognition (OCR) to convert images i
 
 ### 5. Customization
 - Users can customize the interface's color scheme.
-- Admin features include changing the admin password, removing the `textsnapmapa` directory, and viewing or resetting scan statistics.
 
 ### 6. Multi-threading and UI Feedback
 - A loading bar is displayed during initialization to provide feedback to the user during potentially time-consuming operations.
