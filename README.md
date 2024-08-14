@@ -65,7 +65,7 @@ The application utilizes Optical Character Recognition (OCR) to convert images i
 
 1. **Run the script:**
    ```bash
-   python TextSnap.py
+   python TextSnap.pyc
    ```
 2. **Navigate the menu:**
    - Use arrow or number keys to navigate and press Enter to select options.
