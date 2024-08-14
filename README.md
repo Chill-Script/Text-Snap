@@ -3,7 +3,7 @@ TextSnap is a comprehensive Python application designed for extracting, editing,
 The application utilizes Optical Character Recognition (OCR) to convert images into text, which can then be edited, saved as txt, copied to the clipboard, or processed further through OpenAI's ChatGPT.
 
 ![Alt text](https://github.com/Chill-Script/Text-Snap/blob/main/images/Step-1.png)
-## Features
+## Features:
 
 ### 1. OCR (Optical Character Recognition)
 - Supports image formats such as PNG, JPG, JPEG, BMP, and TIFF.
