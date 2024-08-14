@@ -10,15 +10,21 @@ The application utilizes Optical Character Recognition (OCR) to convert images i
 - Utilizes the `pytesseract` library to extract text from images.
 - Processes multiple images selected by the user and cleans the extracted text for readability.
 
+![Alt text](https://github.com/Chill-Script/Text-Snap/blob/main/images/Step-2.png)
+
 ### 2. User Interface
 - Command-line-based interface built using the `curses` library.
 - Interactive menus for scanning images, editing text, saving text to files, copying text to the clipboard, and uploading text to ChatGPT.
 - Customizable color schemes for the interface.
 
+![Alt text](https://github.com/Chill-Script/Text-Snap/blob/main/images/Step-4.png)
+
 ### 3. File Management and Security
 - Extracted text can be saved to new or existing text files.
 - The application ensures the directory where files are saved (`textsnapmapa`) is hidden and protected.
 - Configuration data, including encryption keys and admin passwords, is securely stored using the `cryptography` library.
+
+![Alt text](https://github.com/Chill-Script/Text-Snap/blob/main/images/Step-7.png)
 
 ### 4. ChatGPT Integration
 - Users can upload the extracted text to ChatGPT via OpenAI's API and receive responses.
